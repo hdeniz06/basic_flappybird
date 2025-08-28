@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Flippy Bird - Web</title>
+	<style>
+		:root { --w: 400px; --h: 700px; }
+		body { margin: 0; background: #222; color: #fff; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; display: grid; place-items: center; height: 100vh; }
+		.wrapper { display: grid; gap: 12px; }
+		canvas { width: var(--w); height: var(--h); background: #8ec5ff; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,.35); image-rendering: pixelated; }
+		.controls { display: flex; justify-content: space-between; align-items: center; }
+		.btn { background: #ffffff22; color: #fff; border: 1px solid #ffffffaa; padding: 8px 12px; border-radius: 8px; cursor: pointer; user-select: none; }
+		.btn:hover { background: #ffffff33; }
+		.small { opacity: .8; font-size: 12px; }
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<canvas id="game" width="400" height="700"></canvas>
+		<div class="controls">
+			<button id="reset" class="btn">Yeniden Başlat</button>
+			<div class="small">Fare/Tıkla veya Boşluk ile uç</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html> 
